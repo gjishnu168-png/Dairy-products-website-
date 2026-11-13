@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover beautiful journals, planners and notebooks at PaperNest.">
+  <title>PaperNest | Diaries & Journals</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#">Paper<span>Nest</span><small>DIARIES & MORE</small></a>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#products">Shop</a><a href="#about">About</a>
+    </nav>
+    <button class="cart-button" id="cartButton" aria-label="View cart">🛍 Cart <span id="cartCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">A LITTLE SPACE FOR YOUR THOUGHTS</p>
+        <h1>Your stories<br>deserve a <em>beautiful</em> place.</h1>
+        <p class="hero-text">Find a diary for every idea, plan, dream and everyday moment.</p>
+        <a class="primary-button" href="#products">Explore the collection <span>→</span></a>
+      </div>
+      <div class="hero-art" aria-label="Decorative diary illustration">
+        <div class="sun"></div><div class="book book-back"></div>
+        <div class="book book-front"><span>the little<br>things</span><i>✿</i></div>
+        <div class="sparkle sparkle-one">✦</div><div class="sparkle sparkle-two">✧</div>
+      </div>
+    </section>
+
+    <section class="collection section" id="products">
+      <div class="section-heading">
+        <div><p class="eyebrow">MADE FOR YOUR MOMENTS</p><h2>Find your next favourite</h2></div>
+        <p>Thoughtful pages. Lovely covers.<br>Room for everything you imagine.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filter products">
+        <button class="filter active" data-filter="all">All diaries</button>
+        <button class="filter" data-filter="journal">Journals</button>
+        <button class="filter" data-filter="planner">Planners</button>
+        <button class="filter" data-filter="classic">Classic</button>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="quote-banner" id="about">
+      <p class="eyebrow">A NOTE TO YOUR FUTURE SELF</p>
+      <h2>“Every page is a<br>new beginning.”</h2>
+      <p>PaperNest — make room for your ideas.</p>
+    </section>
+  </main>
+
+  <footer><a class="logo" href="#">Paper<span>Nest</span></a><p>Made for notes, plans & little daydreams.</p><small>© 2026 PaperNest. Demo storefront.</small></footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
